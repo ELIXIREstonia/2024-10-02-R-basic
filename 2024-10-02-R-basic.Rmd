@@ -1,7 +1,7 @@
 ---
 title: "Introduction to R"
 author: "Priit Adler"
-date: "2024-06-18"
+date: "2024-10-02"
 output: html_document
 ---
 
@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction to Rstudio UI
 
-You can find this and the data files from ELIXIREstonia github. [https://github.com/adlerpriit/2024-06-18-R-basic](https://github.com/adlerpriit/2024-06-18-R-basic).
+You can find this and the data files from ELIXIREstonia github. <https://github.com/ELIXIREstonia/2024-10-02-R-basic>.
 
 RStudio is an integrated development environment (IDE) tailored for efficient and user-friendly R programming. Once launched, the RStudio UI presents itself in a segmented manner, primarily divided into four main panes.
 
@@ -23,15 +23,15 @@ RStudio is an integrated development environment (IDE) tailored for efficient an
 
 -   Files / **Plots** / Packages / **Help** / etc...
 
-see: [https://rstudio.github.io/cheatsheets/html/rstudio-ide.html](https://rstudio.github.io/cheatsheets/html/rstudio-ide.html){.uri} for more detailed overview.
+see: <https://rstudio.github.io/cheatsheets/html/rstudio-ide.html> for more detailed overview.
 
 ## Introduction to R
 
 R is a popular open-source programming language and environment for statistical computing and graphics. In this section, we will cover basic R syntax, functions, data structures, and data manipulation using the tidyverse.
 
-You can find this and the data files from ELIXIREstonia github. `https://github.com/adlerpriit/2024-06-18-R-basic`.
+You can find this and the data files from ELIXIREstonia github. `https://github.com/ELIXIREstonia/2024-10-02-R-basic`.
 
-There is follow up course on R and ggplot2  [https://github.com/ELIXIREstonia/2024-06-18-R-visualisation](https://github.com/ELIXIREstonia/2024-06-18-R-visualisation) that is meant as logical continuation after you have finished this document.
+There is follow up course on R and ggplot2 <https://github.com/ELIXIREstonia/2024-10-09-R-visualisation> that is meant as logical continuation after you have finished this document.
 
 ### R Syntax and Basic Functions
 
@@ -53,9 +53,10 @@ x + y
 # Functions
 mean(c(1, 2, 3, 4, 5))
 max(c(1, 2, 3, 4, 5))
+# remember the 'c()'- concatenate function 
 
 # function with named arguments
-my_sum <- function(a=NULL, b) {
+my_sum <- function(a, b=NULL) {
   return(a + b)
 }
 my_sum(5, 7)
